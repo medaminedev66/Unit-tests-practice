@@ -1,6 +1,7 @@
 const stringLength = require('./stringLength');
 const reverseString = require('./reverseString');
 const Calculator = require('./calculator');
+const capitalize = require('./capitalize');
 
 test('Expect the length of the string hello to be 5', () => {
   expect(stringLength('hello')).toBe(5);
@@ -34,4 +35,8 @@ describe('the methods : ', () => {
   test('multiply method works', () => {
     expect(calculator.multiply(2, 7, 2)).toBe(28);
   });
+});
+
+test('capitalize function works', () => {
+  expect(capitalize('hello')).toBe('Hello');
 });
